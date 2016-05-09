@@ -5,7 +5,8 @@ window.onload = function() {
         var nb = 10;
         var taille = 10;
         setInterval(anime, 1000);
-        
+	var color = "red";       
+ 
         function anime() {
             context.fillStyle = "green";
             context.clearRect(0, 0, canvas.width, canvas.height);
@@ -16,7 +17,7 @@ window.onload = function() {
                         context.fillStyle = "green";
                     } else {
                         a[i*taille+j] = 0;
-                        context.fillStyle = "red";
+                        context.fillStyle = color;
                     }
                     context.fillRect(taille*i, taille*j, taille, taille);
                 }
