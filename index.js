@@ -2,9 +2,10 @@ window.onload = function() {
         var canvas = document.getElementById('can');
         var context = canvas.getContext('2d');
         var a = [];
-        var nb = 10;
-        var taille = 10;
-        setInterval(anime, 1000);
+        var nb = document.getElementById('nb');
+        var taille = document.getElementById('size');
+        var temps = document.getElementById('temps');
+        setInterval(anime, temps);
         
         function anime() {
             context.fillStyle = "green";
